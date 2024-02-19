@@ -35,7 +35,7 @@ public class CategoryController {
 		int status = categoryService.addCategory(categoryModel);
 
 		if (status == 1) {
-			return new ResponseEntity<String>("Category Added Successfully !!!", HttpStatus.CREATED);
+			return new ResponseEntity<String>("Category Added Successfully !!", HttpStatus.CREATED);
 		} else if (status == 2) {
 			throw new ResourceAlreadyExistException("Category Already Exists, Check Unique Fields");
 
